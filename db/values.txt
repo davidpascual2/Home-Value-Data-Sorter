@@ -1,0 +1,52 @@
+RegionID|SizeRank|StateName|avgHomeValue
+9|0|California|730347
+54|1|Texas|291270
+14|2|Florida|380467
+43|3|New York|405353
+47|4|Pennsylvania|236513
+21|5|Illinois|226878
+44|6|Ohio|198330
+16|7|Georgia|300877
+36|8|North Carolina|300996
+30|9|Michigan|207955
+40|10|New Jersey|435996
+56|11|Virginia|350718
+59|12|Washington|558622
+8|13|Arizona|414474
+26|14|Massachusetts|546324
+53|15|Tennessee|281409
+22|16|Indiana|216629
+32|17|Missouri|219605
+27|18|Maryland|375016
+60|19|Wisconsin|247111
+10|20|Colorado|535439
+31|21|Minnesota|307513
+51|22|South Carolina|267194
+4|23|Alabama|196038
+25|24|Louisiana|175897
+24|25|Kentucky|182718
+46|26|Oregon|478602
+45|27|Oklahoma|184410
+11|28|Connecticut|348102
+19|29|Iowa|193703
+55|30|Utah|501054
+6|31|Arkansas|170586
+34|32|Mississippi|154273
+42|33|Nevada|418903
+23|34|Kansas|202910
+41|35|New Mexico|275572
+38|36|Nebraska|235445
+61|37|West Virginia|143277
+20|38|Idaho|441103
+18|39|Hawaii|844760
+39|40|New Hampshire|421559
+28|41|Maine|338830
+50|42|Rhode Island|401500
+35|43|Montana|420821
+13|44|Delaware|349634
+52|45|South Dakota|275123
+37|46|North Dakota|235461
+3|47|Alaska|340026
+12|48|District of Columbia|623032
+58|49|Vermont|313405
+62|50|Wyoming|318565
