@@ -6,7 +6,7 @@ DROP TABLE mytable;
 
 CREATE TABLE mytable(
     region_id VARCHAR(300),
-    size INT(10),
+    size_rank INT(10),
     state_name VARCHAR(300),
     home_value DECIMAL(20,2)
 
@@ -16,4 +16,4 @@ LOAD DATA LOCAL INFILE '//Users/davidpascual/Desktop/code/Home-Values/db/values.
 INTO TABLE mytable
 FIELDS TERMINATED BY '|'
 LINES TERMINATED BY '\n'
-(REGION_ID, SIZE, STATE_NAME, HOME_VALUE)
+(REGION_ID, SIZE_RANK, STATE_NAME, HOME_VALUE)
