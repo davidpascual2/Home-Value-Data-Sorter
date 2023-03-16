@@ -6,16 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Values</title>
+    <script src="/js/homeButton.js"></script> {{!-- explain path --}}
+    <script src="/js/priceButton.js"></script>
+    <script src="/js/stateButton.js"></script>
 </head>
 <body>
     <div class="container-fluid">
-        <h1>Home Value Data</h1>
+        <h1 class="text-center">Home Value Data</h1>
 
-        <button type="button" id='state-button' class="btn btn-primary btn-lg btn-block">Sort by State</button>
-        <button type="button" id='price-button' class="btn btn-primary btn-lg btn-block">Sort by Price</button>
-        <button type="button" id='home-button' class="btn btn-promary btn-lg btn-block">Home</button>
+        <button type="button" id='state-button' class="btn btn-primary btn-lg btn-block col-3 mx-auto">Sort by State</button>
+        <button type="button" id='price-button' class="btn btn-primary btn-lg btn-block col-3 mx-auto">Sort by Price</button>
+        <button type="button" id='home-button' class="btn btn-primary btn-lg btn-block col-3 mx-auto">Home</button>
 
-        <table>
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Region ID</th>
@@ -30,7 +33,7 @@
                         <tr>
                             <td>{{this.region_id}}</td>
                             <td>{{this.size_rank}}</td>
-                            <td>{{this.state}}</td>
+                            <td>{{this.state_name}}</td>
                             <td>{{this.home_value}}</td>
                         </tr>
                     {{/each}}

@@ -5,9 +5,9 @@ USE homevalue_db;
 DROP TABLE mytable;
 
 CREATE TABLE mytable(
-    region_id VARCHAR(300),
+    region_id VARCHAR(255),
     size_rank INT(10),
-    state_name VARCHAR(300),
+    state_name VARCHAR(255),
     home_value DECIMAL(20,2)
 
 );

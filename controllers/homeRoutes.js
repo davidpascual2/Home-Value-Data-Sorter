@@ -24,4 +24,60 @@ router.get('/', (req, res) => {
     });
 });
 
+//==================================================
+
+router.get('/state' , (req, res) => {
+    pool.getConnection((err, connection) => {
+        if (err) {
+            console.error('Error connecting to database: '+ err.stack);
+            res.status(500).send('Internal Server Error');
+            return;
+        }
+        connection.query('SELECT * FROM mytable ORDER BY state_name', function(error, results, fields) {
+            connection.release();
+
+            if(error) {
+                console.error('Error retreiving data from database: ' + error.stack);
+                res.status(500).send('Internal server error')
+                return;
+            }
+            var data = groupByState(results);
+            res.render('state', { data })
+        })
+    })
+})
+
+
+//==================================================
+
+const groupByState = (data) => {
+    const groupedData = {};
+    if(!Array.isArray(data)) {
+        return groupedData;
+    }
+    data.forEach(row => {
+        const state = row.state;
+
+        if(!groupedData[state]) {
+            groupedData[state] = []
+        }
+
+        groupedData[state].push(row);
+    });
+
+    const sortedData = {};
+
+    Object.keys(groupedData).sort().forEach(state => {
+        sortedData[state] = groupedData[state];
+    });
+
+    return sortedData;
+}
+
+//==================================================
+
+router.get('/price' , (req, res) => {
+    pool.getConnection((err, connection))
+})
+
 module.exports = router;

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Data</title>
+    <script src="/js/homeButton.js"></script> {{!-- explain path --}}
+    <script src="/js/priceButton.js"></script>
+    <script src="/js/stateButton.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -20,7 +23,7 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Region ID!!!!!</th>
+                    <th>Region ID!</th>
                     <th>Size Rank</th>
                     <th>State</th>
                     <th>Average Home Value</th>
@@ -32,7 +35,7 @@
                         <tr>
                             <td>{{this.region_id}}</td>
                             <td>{{this.size_rank}}</td>
-                            <td>{{this.state}}</td>
+                            <td>{{this.state_name}}</td>
                             <td>{{this.home_value}}</td>
                         </tr>
                     {{/if}}
