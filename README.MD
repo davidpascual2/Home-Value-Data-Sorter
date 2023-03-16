@@ -11,14 +11,14 @@ This is a full-stack web application that uses the MVC paradigm that lets users 
 
 ## Installation
 This application requires the user to have `node.js` and `MySQL` installed.
-* the user should fork or clone the repository from Github and install the dependancies with `npm i` in the root directory
+* the user should fork or clone the repository from Github and install the dependancies by typing in `npm i` in the root directory
 * create a .env file with this information, in this order:
 
-DB_NAME = parcel_db
+    DB_NAME = homevalue_db;
 
-DB_USER=
+    DB_USER=
 
-DB_PASSWORD=
+    DB_PASSWORD=
 
 * log into mysql in the integrated terminal by typing in `mysql -u <username> -p`. 
 * type `SOURCE db/schema.sql;` and then exit.
