@@ -1,8 +1,9 @@
+const router = require('express').Router();
 const homeRoutes = require('./homeRoutes')
 
-Router.use('/', homeRoutes);
+router.use('/', homeRoutes);
 
-Router.use((req, res) => {
+router.use((req, res) => {
     res.status(404).json({
         request: {
             method: req.method, 

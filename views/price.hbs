@@ -8,6 +8,35 @@
     <title>Document</title>
 </head>
 <body>
-    
+     <div class="container-fluid">
+        <h1>Home Value Data</h1>
+
+        <button type="button" id='state-button' class="btn btn-primary btn-lg btn-block">Sort by State</button>
+        <button type="button" id='price-button' class="btn btn-primary btn-lg btn-block">Sort by Price</button>
+        <button type="button" id='home-button' class="btn btn-promary btn-lg btn-block">Home</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Region ID</th>
+                    <th>Size Rank</th>
+                    <th>State</th>
+                    <th>Average Home Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each data}}
+                    {{#each this}}
+                        <tr>
+                            <td>{{this.region_id}}</td>
+                            <td>{{this.size_rank}}</td>
+                            <td>{{this.state}}</td>
+                            <td>{{this.home_value}}</td>
+                        </tr>
+                    {{/each}}
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
