@@ -9,6 +9,8 @@ const pool = mysql.createPool({
     database: process.env.DB_NAME
 });
 
+//==================== HOME ROUTE =======================//
+
 router.get('/', (req, res) => {
     pool.query('SELECT * FROM mytable', (error, results, fields) => {
         if (error) {
@@ -24,7 +26,7 @@ router.get('/', (req, res) => {
     });
 });
 
-//====================== STATE ROUTE ============================//
+//====================== STATE ROUTE ======================//
 
 router.get('/state' , (req, res) => {
     pool.getConnection((err, connection) => {
@@ -48,7 +50,7 @@ router.get('/state' , (req, res) => {
 })
 
 
-//============ STATE FUNCTION ============//
+// STATE FUNCTION 
 
 const groupByState = (data) => {
     const groupedData = {};
@@ -101,7 +103,7 @@ router.get('/price' , (req, res) => {
     });
 });
 
-//=============== PRICE FUNCTION =================//
+// PRICE FUNCTION 
 
 const groupByPrice = (data) => {
     const groupedData = {};

@@ -12,11 +12,14 @@
 </head>
 <body>
     <div class="container-fluid">
-        <h1 class="text-center">Home Values (Dec 2022)</h1>
+       <h1 class="text-center pb-4 pt-4">Average Home Values (Dec 2022)</h1>
 
-        <button type="button" id='state-button' class="btn btn-primary btn-lg btn-block col-3 mx-auto">Sort by State</button>
-        <button type="button" id='price-button' class="btn btn-primary btn-lg btn-block col-3 mx-auto">Sort by Price</button>
-        <button type="button" id='home-button' class="btn btn-primary btn-lg btn-block col-3 mx-auto">Home</button>
+        <div class='pb-4 d-flex justify-content-around'>
+            <button type="button" id='home-button' class="btn btn-primary btn-lg  col-4 m-1 ">Home</button>
+            <button type="button" id='price-button' class="btn btn-danger btn-lg  col-4 m-1">Sort by Price</button>
+            <button type="button" id='state-button' class="btn btn-warning btn-lg  col-4 m-1">Sort by State</button>
+            
+        </div>
 
         <table class="table table-striped">
             <thead>

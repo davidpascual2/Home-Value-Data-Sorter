@@ -24,13 +24,12 @@ This application requires the user to have `node.js` and `MySQL` installed.
 * type `SOURCE db/schema.sql;` and then exit.
 
 If you receive an error on MySQL stating "loading local data is disabled", do the following steps:
-1. set the global variables by using this command:
-* mysql> `SET GLOBAL local_infile=true;`
+1. set the global variables by using this command: mysql> `SET GLOBAL local_infile=true;`
 2. quit current server: mysql> `quit`
 3. connect to the server with local-infile system variable :
 `mysql --local-infile=1 -u root -p`
 
-this should now allow you to load local data into you mySQL database.
+This should now allow you to load local data into you mySQL database.
 
 view a demonstration video 
 
