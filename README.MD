@@ -1,4 +1,4 @@
-# Home Values Data Sorter
+# Home Value Data Sorter
 
 ## Table of Contents
 * [Description](#Description)
@@ -31,11 +31,9 @@ If you receive an error on MySQL stating "loading local data is disabled", do th
 1. set the global variables by using this command: mysql> `SET GLOBAL local_infile=true;`
 2. quit current server: mysql> `quit`
 3. connect to the server with local-infile system variable :
-`mysql --local-infile=1 -u root -p`
+`mysql --local-infile=true -u root -p`
 
 This should now allow you to load local data into you mySQL database.
-
-view a demonstration video 
 
 ## Tech
 * HTML
