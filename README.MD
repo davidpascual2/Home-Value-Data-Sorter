@@ -9,6 +9,10 @@
 ## Description
 This is a full-stack web application that uses the MVC paradigm that lets users sort data by state or price in a table format. 
 
+![Screenshot of search results](./assets/homevalue-SS1.png)
+![Screenshot of search results](./assets/homevalue-SS2.png)
+
+
 ## Installation
 This application requires the user to have `node.js` and `MySQL` installed.
 * the user should fork or clone the repository from Github and install the dependancies by typing in `npm i` in the root directory
