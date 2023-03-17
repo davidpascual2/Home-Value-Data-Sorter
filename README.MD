@@ -26,6 +26,7 @@ This application requires the user to have `node.js` and `MySQL` installed.
 
 * log into mysql in the integrated terminal by typing in `mysql -u <username> -p`. 
 * type `SOURCE db/schema.sql;` and then exit.
+* Run `npm start` and go to your local browser and type in  localhost:3001 in the URL.
 
 If you receive an error on MySQL stating "loading local data is disabled", do the following steps:
 1. set the global variables by using this command: mysql> `SET GLOBAL local_infile=true;`
