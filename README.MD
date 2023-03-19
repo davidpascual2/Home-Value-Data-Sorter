@@ -36,6 +36,8 @@ If you receive an error on MySQL stating "loading local data is disabled", do th
 
 This should now allow you to load local data into you mySQL database.
 
+View a demonstration video [Screencastify](https://drive.google.com/file/d/15ipMei33ubhGsPaxy3Ii5Ql4q3NQ0vtU/view)
+
 ## Tech
 * HTML
 * Javascript

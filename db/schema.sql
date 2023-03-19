@@ -12,7 +12,7 @@ CREATE TABLE mytable(
 
 );
 
-LOAD DATA LOCAL INFILE '//Users/davidpascual/Desktop/code/Home-Values/db/values.txt'
+LOAD DATA LOCAL INFILE '/Users/davidpascual/Desktop/code/Home-Values/db/values.txt'
 INTO TABLE mytable
 FIELDS TERMINATED BY '|'
 LINES TERMINATED BY '\n'
